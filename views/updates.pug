@@ -1,0 +1,18 @@
+doctype html
+html
+    head
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        .form-wrapper
+            a(href="/") Return to the homepage
+            h1 Create/Update Custom Object
+            form(method="POST")
+                label(for="new_name") Name
+                input(type="text" name="new_name" required)
+                label(for="new_type") Type
+                input(type="text" name="new_type" required)
+                label(for="new_trait") Character Trait
+                input(type="text" name="new_trait" required)
+                input(type="submit" value="Submit")
